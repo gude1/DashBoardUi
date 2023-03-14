@@ -15,7 +15,7 @@ const SideBarBtn = () => {};
 
 export default function SideBar({}: SideBarProps) {
   return (
-    <aside className="w-[17.5rem] fixed top-0 overflow-x-hidden overflow-y-auto bottom-0 left-0 bg-white flex flex-col">
+    <aside className="w-[17.5rem] fixed top-0 overflow-x-hidden overflow-y-auto bottom-0 left-0 bg-white flex flex-col transition-transform">
       <nav className="my-8 border-red-800 mx-6 mb-8">
         <div className="flex items-center">
           <img src={logo} alt="sidebar_logo" />
