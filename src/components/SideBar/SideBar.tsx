@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "@/assets/logo.png";
+import sidebarimg from "@/assets/sidebarimg.png";
 import searchsvg from "@/assets/search.svg";
 import Input from "@/components/Input/Input";
 import Button from "@/components/Button/Button";
@@ -233,6 +234,9 @@ export default function SideBar({}: SideBarProps) {
           <span className="leading-5 font-normal text-sm text-color4 mt-1">
             Check out the new dashboard view. Pages now load faster.
           </span>
+          <div className="mt-4 rounded-md overflow-x-hidden">
+            <img src={sidebarimg} className="w-52 object-cover object-center" />
+          </div>
         </div>
       </nav>
     </aside>
