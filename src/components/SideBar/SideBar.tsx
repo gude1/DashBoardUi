@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "@/assets/logo.png";
 import sidebarimg from "@/assets/sidebarimg.png";
+import avatar from "@/assets/avatar.png";
 import searchsvg from "@/assets/search.svg";
 import Input from "@/components/Input/Input";
 import Button from "@/components/Button/Button";
@@ -236,6 +237,30 @@ export default function SideBar({}: SideBarProps) {
           </span>
           <div className="mt-4 rounded-md overflow-x-hidden">
             <img src={sidebarimg} className="w-52 object-cover object-center" />
+          </div>
+          <div className="flex mt-4">
+            <span className="text-sm leading-5 text-color4 font-medium">
+              Dismiss
+            </span>
+            <span className="ml-3 text-sm leading-5 text-color6 font-medium cursor-pointer">
+              What's New
+            </span>
+          </div>
+        </div>
+        <hr className="mt-6 bg-[#EAECF0]" />
+        <div className="mt-6 min-h-[50px] flex items-center border-2 border-red-700">
+          <img
+            src={avatar}
+            className="w-10 object-contain object-center"
+            alt="avatar"
+          />
+          <div className="flex flex-col text-left ml-3">
+            <span className="text-sm leading-5 font-bold text-color3">
+              Olivia Rhye
+            </span>
+            <span className="text-sm leading-5 text-color4 font-normal">
+              olivia@untitledui.com
+            </span>
           </div>
         </div>
       </nav>

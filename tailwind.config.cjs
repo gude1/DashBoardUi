@@ -9,6 +9,7 @@ module.exports = {
         color3: "#101828",
         color4: "#667085",
         color5: "#F9FAFB",
+        color6: "#6941C6",
       },
       fontFamily: {
         inter: ["inter"],
