@@ -14,10 +14,10 @@ export default function Button({
 }: ButtonProps) {
   return (
     <button
-      className={`relative flex items-center hover:text-color3 hover:bg-color5 rounded-md h h-10 w-full text-[#344054] py-2 px-3 ${className}`}
+      className={`relative flex items-center group hover:bg-color5 rounded-md font-medium h-10 w-full py-2 px-3 ${className}`}
     >
-      <div className="left-4 absolute">{lefticon}</div>
-      <span className="ml-4 absolute  left-10 font-medium text-base leading-6">
+      <div className="left-3 absolute">{lefticon}</div>
+      <span className="ml-4 absolute left-8 font-medium text-base text-[#344054] leading-6 group-hover:text-color3 group-hover:font-bold">
         {title}
       </span>
     </button>

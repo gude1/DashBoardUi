@@ -225,7 +225,15 @@ export default function SideBar({}: SideBarProps) {
             />
           </li>
         </ul>
-        <div className="bg-color5 rounded-lg mt-6 min-h-[150px] border border-red-800"></div>
+        <div className="bg-color5 flex flex-col rounded-lg mt-6 min-h-[150px] border-red-800 text-left py-5 px-4">
+          <span className="font-inter text-sm font-bold leading-5 text-color3">
+            New features available!
+          </span>
+
+          <span className="leading-5 font-normal text-sm text-color4 mt-1">
+            Check out the new dashboard view. Pages now load faster.
+          </span>
+        </div>
       </nav>
     </aside>
   );
