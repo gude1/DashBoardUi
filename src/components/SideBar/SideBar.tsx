@@ -13,8 +13,8 @@ const SideBarBtn = () => {};
 
 export default function SideBar({}: SideBarProps) {
   return (
-    <aside className="w-[17.5rem] fixed top-0  overflow-x-hidden overflow-y-auto bottom-0 left-0 bg-white flex flex-col">
-      <nav className="my-8 border-red-800 min-h-[50px] mx-6">
+    <aside className="w-[17.5rem] fixed top-0 overflow-x-hidden overflow-y-auto bottom-0 left-0 bg-white flex flex-col">
+      <nav className="my-8 border-red-800 mx-6 mb-8">
         <div className="flex items-center">
           <img src={logo} alt="sidebar_logo" />
         </div>
@@ -225,7 +225,7 @@ export default function SideBar({}: SideBarProps) {
             />
           </li>
         </ul>
-        <div className="bg-color5 rounded-lg min-h-[150px] border border-red-800"></div>
+        <div className="bg-color5 rounded-lg mt-6 min-h-[150px] border border-red-800"></div>
       </nav>
     </aside>
   );
