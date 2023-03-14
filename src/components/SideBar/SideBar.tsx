@@ -248,20 +248,38 @@ export default function SideBar({}: SideBarProps) {
           </div>
         </div>
         <hr className="mt-6 bg-[#EAECF0]" />
-        <div className="mt-6 min-h-[50px] flex items-center border-2 border-red-700">
-          <img
-            src={avatar}
-            className="w-10 object-contain object-center"
-            alt="avatar"
-          />
-          <div className="flex flex-col text-left ml-3">
-            <span className="text-sm leading-5 font-bold text-color3">
-              Olivia Rhye
-            </span>
-            <span className="text-sm leading-5 text-color4 font-normal">
-              olivia@untitledui.com
-            </span>
+        <div className="flex mt-6 border-red-600">
+          <div className="min-h-[50px] flex items-center border-red-700">
+            <img
+              src={avatar}
+              className="w-10 object-contain object-center"
+              alt="avatar"
+            />
+            <div className="flex flex-col text-left ml-3">
+              <span className="text-sm leading-5 font-bold text-color3">
+                Olivia Rhye
+              </span>
+              <span className="text-sm leading-5 text-color4 font-normal">
+                olivia@untitledui.com
+              </span>
+            </div>
           </div>
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="mt-1 ml-5 cursor-pointer"
+          >
+            <path
+              d="M6.5 16.5H3.16667C2.72464 16.5 2.30072 16.3244 1.98816 16.0118C1.67559 15.6993 1.5 15.2754 1.5 14.8333V3.16667C1.5 2.72464 1.67559 2.30072 1.98816 1.98816C2.30072 1.67559 2.72464 1.5 3.16667 1.5H6.5M12.3333 13.1667L16.5 9M16.5 9L12.3333 4.83333M16.5 9H6.5"
+              stroke="#667085"
+              stroke-width="1.67"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
         </div>
       </nav>
     </aside>
