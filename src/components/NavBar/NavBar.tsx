@@ -55,6 +55,7 @@ export default function NavBar() {
             </div>
             <Input
               placeholder="Search"
+              parentClassName="mt-6"
               lefticon={
                 <svg
                   width="18"

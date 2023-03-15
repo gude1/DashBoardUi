@@ -71,7 +71,7 @@ function App() {
             <div className="flex mt-4 md:mt-0 md:ml-10 items-start">
               <input
                 type={"radio"}
-                className="rounded-full bg-white mt-[1px]"
+                className="rounded-full bg-white mt-[1px] w-4 h-4"
               />
               <div className="flex flex-col  ml-2">
                 <span className="font-semibold leading-5 text-sm text-color7">
@@ -86,13 +86,32 @@ function App() {
             <div className="flex mt-4 md:ml-10 items-start">
               <input
                 type={"radio"}
-                className="rounded-full bg-white mt-[1px]"
+                className="rounded-full bg-white mt-[1px] w-4 h-4"
               />
               <div className="flex flex-col  ml-2">
                 <span className="font-semibold leading-5 text-sm text-color7">
                   Send to my account email
                 </span>
-                <Input />
+                <Input
+                  parentClassName="mt-3 bg-white"
+                  lefticon={
+                    <svg
+                      width="20"
+                      height="16"
+                      viewBox="0 0 20 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M18.3333 3.00001C18.3333 2.08334 17.5833 1.33334 16.6666 1.33334H3.33329C2.41663 1.33334 1.66663 2.08334 1.66663 3.00001M18.3333 3.00001V13C18.3333 13.9167 17.5833 14.6667 16.6666 14.6667H3.33329C2.41663 14.6667 1.66663 13.9167 1.66663 13V3.00001M18.3333 3.00001L9.99996 8.83334L1.66663 3.00001"
+                        stroke="#667085"
+                        stroke-width="1.66667"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  }
+                />
               </div>
             </div>
           </div>
