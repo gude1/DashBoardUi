@@ -5,8 +5,8 @@ function App() {
   return (
     <div>
       <NavBar />
-      <div className="border-gray-900 mt-16 md:mt-0 min-h-[100px] md:ml-[17.5rem]">
-        <section className="p-4 md:p-8">
+      <div className="border-gray-900 mt-16 md:mt-0 min-h-[100px] md:ml-[17.5rem] py-8">
+        <section className="px-4 md:px-8">
           <h1 className="font-bold leading-8 font-inter text-color3 text-2xl">
             Settings
           </h1>
@@ -15,7 +15,7 @@ function App() {
           </p>
         </section>
 
-        <section className="overflow-y-auto w-full flex border-y border-color2">
+        <section className="overflow-y-auto w-full flex border-y border-color2 mt-6">
           <button className="flex p-2 font-inter text-sm leading-5 font-medium text-color7 cursor-pointer bg-white border-r border-color2 hover:bg-color1 hover:font-bold hover:text-[#1D2939]">
             Mydetails
           </button>
@@ -42,7 +42,7 @@ function App() {
           </button>
         </section>
 
-        <section className="p-4 md:p-8 mt-8">
+        <section className="px-4 md:px-8 mt-8">
           <h1 className="font-bold text-lg leading-8 font-inter text-color3">
             Payment method
           </h1>
@@ -51,7 +51,7 @@ function App() {
           </p>
         </section>
 
-        <section className="p-4 md:p-8">
+        <section className="px-4 md:px-8 mt-5">
           <div className="border-[#EAECF0] border-b" />
         </section>
       </div>
