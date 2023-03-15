@@ -25,7 +25,7 @@ export default function Input(props: InputProps): JSX.Element {
         </button>
       )}
       <input
-        className="w-full h-full outline-0 border-0 placeholder:text-color4 placeholder:font-normal placeholder:text-base text-color4 placeholder:leading-6"
+        className="w-full h-full outline-0 border-0 placeholder:text-color4 placeholder:font-normal placeholder:text-base text-color4 placeholder:leading-6 bg-white"
         placeholder="Email Address"
         {...props}
       />

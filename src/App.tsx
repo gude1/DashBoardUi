@@ -16,33 +16,30 @@ function App() {
         </section>
 
         <section className="overflow-y-auto w-full flex border-y border-color2">
-          {/* <div className="h-10 w-[100] border border-color2  rounded-[0px_8px_8px_0px]"> */}
-          <button className="flex p-2 font-inter text-sm leading-5 font-medium text-color7 border-r border-color2 hover:bg-color1 hover:font-bold hover:text-[#1D2939]">
+          <button className="flex p-2 font-inter text-sm leading-5 font-medium text-color7 cursor-pointer bg-white border-r border-color2 hover:bg-color1 hover:font-bold hover:text-[#1D2939]">
             Mydetails
           </button>
-          <button className="flex p-2 font-inter text-sm leading-5 font-medium text-color7 border-r border-color2 hover:bg-color1 hover:font-bold hover:text-[#1D2939]">
+          <button className="flex p-2 font-inter text-sm leading-5 font-medium text-color7 cursor-pointer bg-white border-r border-color2 hover:bg-color1 hover:font-bold hover:text-[#1D2939]">
             Profile
           </button>
-          <button className="flex p-2 font-inter text-sm leading-5 font-medium text-color7 border-r border-color2 hover:bg-color1 hover:font-bold hover:text-[#1D2939]">
+          <button className="flex p-2 font-inter text-sm leading-5 font-medium text-color7 cursor-pointer bg-white border-r border-color2 hover:bg-color1 hover:font-bold hover:text-[#1D2939]">
             Password
           </button>
-          <button className="flex p-2 font-inter text-sm leading-5 font-medium text-color7 border-r border-color2 hover:bg-color1 hover:font-bold hover:text-[#1D2939]">
+          <button className="flex p-2 font-inter text-sm leading-5 font-medium text-color7 cursor-pointer bg-white border-r border-color2 hover:bg-color1 hover:font-bold hover:text-[#1D2939]">
             Plan
           </button>
-          <button className="flex p-2 font-inter text-sm leading-5 font-medium text-color7 border-r border-color2 hover:bg-color1 hover:font-bold hover:text-[#1D2939]">
+          <button className="flex p-2 font-inter text-sm leading-5 font-medium text-color7 cursor-pointer bg-white border-r border-color2 hover:bg-color1 hover:font-bold hover:text-[#1D2939]">
             Billing
           </button>
-          <button className="flex p-2 font-inter text-sm leading-5 font-medium text-color7 border-r border-color2 hover:bg-color1 hover:font-bold hover:text-[#1D2939]">
+          <button className="flex p-2 font-inter text-sm leading-5 font-medium text-color7 cursor-pointer bg-white border-r border-color2 hover:bg-color1 hover:font-bold hover:text-[#1D2939]">
             Notifications
           </button>
-          <button className="flex p-2 font-inter text-sm leading-5 font-medium text-color7 border-r border-color2 hover:bg-color1 hover:font-bold hover:text-[#1D2939]">
+          <button className="flex p-2 font-inter text-sm leading-5 font-medium text-color7 cursor-pointer bg-white border-r border-color2 hover:bg-color1 hover:font-bold hover:text-[#1D2939]">
             Integrations
           </button>
-          <button className="flex p-2 font-inter text-sm leading-5 font-medium text-color7 border-r border-color2 hover:bg-color1 hover:font-bold hover:text-[#1D2939]">
+          <button className="flex p-2 font-inter text-sm leading-5 font-medium text-color7 cursor-pointer bg-white border-r border-color2 hover:bg-color1 hover:font-bold hover:text-[#1D2939]">
             Api
           </button>
-
-          {/* </div> */}
         </section>
 
         <section className="p-4 md:p-8 mt-8">
@@ -52,6 +49,10 @@ function App() {
           <p className="font-normal text-sm leading-6 font-inter mt-1 text-color4">
             Update your billing details and address.
           </p>
+        </section>
+
+        <section className="p-4 md:p-8">
+          <div className="border-[#EAECF0] border-b" />
         </section>
       </div>
     </div>
