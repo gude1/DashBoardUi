@@ -44,7 +44,7 @@ export default function NavBar() {
       </div>
 
       <aside
-        className={`fixed  ${
+        className={`fixed  z-40 ${
           hidden ? "-translate-x-full" : "translate-x-0"
         }  md:flex flex-col top-16 md:top-0 bottom-0 left-0 w-full md:w-[17.5rem] bg-[rgba(0,0,0,0.5)] md:bg-transparent transition-transform md:translate-x-0`}
       >
