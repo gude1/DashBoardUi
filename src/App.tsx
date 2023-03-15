@@ -1,4 +1,5 @@
 import NavBar from "@/components/NavBar/NavBar";
+import Input from "@/components/Input/Input";
 //styleName: Text md/Normal;
 
 function App() {
@@ -54,7 +55,47 @@ function App() {
         </section>
 
         <section className="px-4 md:px-8 mt-5">
-          <div className="border-[#EAECF0] border-b" />
+          <hr className="bg-[#EAECF0]" />
+        </section>
+
+        <section className="px-4 md:px-8 flex flex-col md:flex-row mt-6">
+          <div>
+            <h1 className="font-semibold text-sm leading-5 font-inter text-color7">
+              Contact email
+            </h1>
+            <p className="font-normal text-sm leading-5 font-inter mt-1 text-color4">
+              Where should invoices be sent?
+            </p>
+          </div>
+          <div>
+            <div className="flex mt-4 md:mt-0 md:ml-10 items-start">
+              <input
+                type={"radio"}
+                className="rounded-full bg-white mt-[1px]"
+              />
+              <div className="flex flex-col  ml-2">
+                <span className="font-semibold leading-5 text-sm text-color7">
+                  Send to my account email
+                </span>
+                <span className="text-color4 leading-5 text-sm">
+                  olivia@untitledui.com
+                </span>
+              </div>
+            </div>
+
+            <div className="flex mt-4 md:ml-10 items-start">
+              <input
+                type={"radio"}
+                className="rounded-full bg-white mt-[1px]"
+              />
+              <div className="flex flex-col  ml-2">
+                <span className="font-semibold leading-5 text-sm text-color7">
+                  Send to my account email
+                </span>
+                <Input />
+              </div>
+            </div>
+          </div>
         </section>
       </div>
     </div>
