@@ -15,31 +15,33 @@ function App() {
           </p>
         </section>
 
-        <section className="overflow-y-auto w-full flex border-y border-color2 mt-6">
-          <button className="flex p-2 font-inter text-sm leading-5 font-medium text-color7 cursor-pointer bg-white border-r border-color2 hover:bg-color1 hover:font-bold hover:text-[#1D2939]">
-            Mydetails
-          </button>
-          <button className="flex p-2 font-inter text-sm leading-5 font-medium text-color7 cursor-pointer bg-white border-r border-color2 hover:bg-color1 hover:font-bold hover:text-[#1D2939]">
-            Profile
-          </button>
-          <button className="flex p-2 font-inter text-sm leading-5 font-medium text-color7 cursor-pointer bg-white border-r border-color2 hover:bg-color1 hover:font-bold hover:text-[#1D2939]">
-            Password
-          </button>
-          <button className="flex p-2 font-inter text-sm leading-5 font-medium text-color7 cursor-pointer bg-white border-r border-color2 hover:bg-color1 hover:font-bold hover:text-[#1D2939]">
-            Plan
-          </button>
-          <button className="flex p-2 font-inter text-sm leading-5 font-medium text-color7 cursor-pointer bg-white border-r border-color2 hover:bg-color1 hover:font-bold hover:text-[#1D2939]">
-            Billing
-          </button>
-          <button className="flex p-2 font-inter text-sm leading-5 font-medium text-color7 cursor-pointer bg-white border-r border-color2 hover:bg-color1 hover:font-bold hover:text-[#1D2939]">
-            Notifications
-          </button>
-          <button className="flex p-2 font-inter text-sm leading-5 font-medium text-color7 cursor-pointer bg-white border-r border-color2 hover:bg-color1 hover:font-bold hover:text-[#1D2939]">
-            Integrations
-          </button>
-          <button className="flex p-2 font-inter text-sm leading-5 font-medium text-color7 cursor-pointer bg-white border-r border-color2 hover:bg-color1 hover:font-bold hover:text-[#1D2939]">
-            Api
-          </button>
+        <section className="overflow-y-auto w-full md:px-8">
+          <div className="border-y flex border-color2 md:w-fit md:border md:rounded-md mt-6 overflow-y-hidden">
+            <button className="flex p-2 font-inter text-sm leading-5 font-medium text-color7 cursor-pointer bg-white border-r border-color2 hover:bg-color1 hover:font-bold hover:text-[#1D2939]">
+              Mydetails
+            </button>
+            <button className="flex p-2 font-inter text-sm leading-5 font-medium text-color7 cursor-pointer bg-white border-r border-color2 hover:bg-color1 hover:font-bold hover:text-[#1D2939]">
+              Profile
+            </button>
+            <button className="flex p-2 font-inter text-sm leading-5 font-medium text-color7 cursor-pointer bg-white border-r border-color2 hover:bg-color1 hover:font-bold hover:text-[#1D2939]">
+              Password
+            </button>
+            <button className="flex p-2 font-inter text-sm leading-5 font-medium text-color7 cursor-pointer bg-white border-r border-color2 hover:bg-color1 hover:font-bold hover:text-[#1D2939]">
+              Plan
+            </button>
+            <button className="flex p-2 font-inter text-sm leading-5 font-medium text-color7 cursor-pointer bg-white border-r border-color2 hover:bg-color1 hover:font-bold hover:text-[#1D2939]">
+              Billing
+            </button>
+            <button className="flex p-2 font-inter text-sm leading-5 font-medium text-color7 cursor-pointer bg-white border-r border-color2 hover:bg-color1 hover:font-bold hover:text-[#1D2939]">
+              Notifications
+            </button>
+            <button className="flex p-2 font-inter text-sm leading-5 font-medium text-color7 cursor-pointer bg-white border-r border-color2 hover:bg-color1 hover:font-bold hover:text-[#1D2939]">
+              Integrations
+            </button>
+            <button className="flex p-2 font-inter text-sm leading-5 font-medium text-color7 cursor-pointer bg-white  hover:bg-color1 hover:font-bold hover:text-[#1D2939]">
+              Api
+            </button>
+          </div>
         </section>
 
         <section className="px-4 md:px-8 mt-8">
