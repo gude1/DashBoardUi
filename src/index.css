@@ -8,6 +8,20 @@
 }
 
 @layer base {
+  html,
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    box-sizing: border-box;
+  }
+
   input select,
   textarea {
     -webkit-user-select: text;
@@ -25,5 +39,8 @@
   textarea:focus,
   button:focus {
     outline: none;
+  }
+  ::-webkit-scrollbar {
+    display: none;
   }
 }

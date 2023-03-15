@@ -10,6 +10,7 @@ module.exports = {
         color4: "#667085",
         color5: "#F9FAFB",
         color6: "#6941C6",
+        color7: "#344054",
       },
       fontFamily: {
         inter: ["inter"],
