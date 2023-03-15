@@ -6,12 +6,12 @@ import searchsvg from "@/assets/search.svg";
 import Input from "@/components/Input/Input";
 import Button from "@/components/Button/Button";
 
-export type SideBarProps = {} & React.DetailedHTMLProps<
+export type NavBarProps = {} & React.DetailedHTMLProps<
   React.HTMLAttributes<HTMLDivElement>,
   HTMLDivElement
 >;
 
-export default function SideBar() {
+export default function NavBar() {
   const [hidden, setHidden] = useState(false);
 
   return (
@@ -42,6 +42,7 @@ export default function SideBar() {
           />
         </svg>
       </div>
+
       <aside
         className={`fixed  ${
           hidden ? "-translate-x-full" : "translate-x-0"
@@ -49,7 +50,7 @@ export default function SideBar() {
       >
         <nav className="h-full w-[17.5rem] bg-white overflow-y-auto">
           <div className="my-8 border-red-800 mx-6 mb-8">
-            <div className="flex items-center">
+            <div className="items-center hidden md:flex">
               <img src={logo} alt="sidebar_logo" />
             </div>
             <Input
