@@ -1,40 +1,54 @@
-import React, { useLayoutEffect } from "react";
+import React, { useLayoutEffect, useRef } from "react";
 import "./PageLoader.css";
 
-function PageLoader() {
-  let Listener = null;
+const PageLoader = () => {
+  const loaderRef = useRef<HTMLDivElement>(null);
+  let listener: any = null;
+
   useLayoutEffect(() => {
     if (document.readyState === "complete") {
       setTimeout(() => {
-        document.getElementById("page-loader-wrapper")!.style.opacity = "0";
+        hideLoader();
       }, 1000);
     } else {
-      Listener = window.addEventListener("load", (event) => {
+      listener = window.addEventListener("load", () => {
         setTimeout(() => {
-          document.getElementById("page-loader-wrapper")!.style.opacity = "0";
+          hideLoader();
         }, 2000);
       });
     }
-    const watchLoaderTransistion = document
-      .getElementById("page-loader-wrapper")!
-      .addEventListener("transitionend", () => {
-        document.getElementById("page-loader-wrapper")!.style.display = "none";
-      });
+
+    const watchLoaderTransition = () => {
+      if (loaderRef.current) {
+        loaderRef.current.style.display = "none";
+      }
+    };
+
+    const loaderWrapper = document.getElementById("page-loader-wrapper");
+    loaderWrapper?.addEventListener("transitionend", watchLoaderTransition);
+
     return () => {
-      Listener && window.removeEventListener("load", Listener);
-      document
-        .getElementById("page-loader-wrapper")!
-        .removeEventListener("transitionend", watchLoaderTransistion);
+      if (listener) {
+        window.removeEventListener("load", listener);
+      }
+      loaderWrapper?.removeEventListener(
+        "transitionend",
+        watchLoaderTransition
+      );
     };
   }, []);
 
+  const hideLoader = () => {
+    if (loaderRef.current) {
+      loaderRef.current.style.opacity = "0";
+    }
+  };
   return (
-    <div id="page-loader-wrapper">
+    <div id="page-loader-wrapper" ref={loaderRef}>
       <h2 data-text="Dashboard" className="animated-text">
         Dashboard
       </h2>
     </div>
   );
-}
-
+};
 export default PageLoader;
