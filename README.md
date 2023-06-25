@@ -28,4 +28,4 @@ yarn run dev or npm run dev
 ![](/src/assets/readmeimg/desktop.png)
 
 - Mobile View
-![](/src/assets/readmeing/mobile.png)
+![](/src/assets/readmeimg/mobile.png)
