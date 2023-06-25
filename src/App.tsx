@@ -93,7 +93,7 @@ function App() {
                   Send to my account email
                 </span>
                 <Input
-                  parentClassName="mt-3 bg-white"
+                  parentclassname="mt-3 bg-white"
                   lefticon={
                     <svg
                       width="20"

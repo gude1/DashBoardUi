@@ -5,7 +5,7 @@ export type InputProps = {
   righticon?: JSX.Element;
   lefticonClick?: () => void;
   righticonClick?: () => void;
-  parentClassName?: string;
+  parentclassname?: string;
 } & React.DetailedHTMLProps<
   React.InputHTMLAttributes<HTMLInputElement>,
   HTMLInputElement
@@ -14,7 +14,7 @@ export type InputProps = {
 export default function Input(props: InputProps): JSX.Element {
   return (
     <div
-      className={`bg-transparent flex rounded-lg w-full overflow-hidden items-center  pl-2 transition-all   h-11 p-0 border border-color2 drop-shadow-none hover:border-color3 ${props.parentClassName}`}
+      className={`bg-transparent flex rounded-lg w-full overflow-hidden items-center  pl-2 transition-all   h-11 p-0 border border-color2 drop-shadow-none hover:border-color3 ${props.parentclassname}`}
     >
       {props.lefticon && (
         <button
