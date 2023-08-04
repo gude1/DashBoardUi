@@ -1,4 +1,4 @@
-# Vencura
+# DashboardUi
  A simple Responsive Dashboard ui built with react vite, tailwindcss and Typescript
 
 ## Table of Contents
